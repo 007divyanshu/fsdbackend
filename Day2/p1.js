@@ -3,7 +3,7 @@ const fs=require('fs');
 const newdata="I am new data";
 // const data=fs.readFileSync('./data.txt', 'utf8');
 
-fs.writeFileSync('./data.txt', newdata);
+fs.writeFileSync('./mydir/data.txt', newdata);
 
 // console.log(data);
 const data = "I am new data"
