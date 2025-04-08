@@ -1,6 +1,6 @@
 const express=require('express')
 const cors=require('cors')
-const fs=require('fs/promises')
+const fs=require('fs/promises');
 const app=express()
 let users=[];
 app.use(cors())
@@ -42,13 +42,12 @@ app.put('/users/:id',(req,res)=>{
     writedata();
     res.status(200).json({message: 'User updated successfully'});
 })
-
 app.delete('/users/:id',(req,res)=>{
-    const uid = req.params.id;
+    const uid=req.params.id;
     const userIndex=users.findIndex(user=>user.id==uid);
     if(userIndex==-1){
         res.status(404).json({message: 'User not found'})
-        }
+    }
     else{
         users.splice(userIndex,1);
         writedata();
