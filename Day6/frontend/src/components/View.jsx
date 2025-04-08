@@ -7,7 +7,7 @@ const View = () => {
     handleview();
   }, []);
   const handleview = async () => {
-    const res = await axios.get("https://backend-e35w.onrender.com/users");
+    const res = await axios.get("https://fsdbackend-rie8.onrender.com/users");
     setUsers(res.data);
     console.log(users);
   };

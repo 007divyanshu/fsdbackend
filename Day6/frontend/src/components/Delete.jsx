@@ -4,7 +4,7 @@ const Delete = () => {
   const handledelete = async (e) => {
     e.preventDefault();
     const id = e.target.id.value;
-    await axios.delete(`https://backend-e35w.onrender.com/users/${id}`);
+    await axios.delete(`https://fsdbackend-rie8.onrender.com/users/${id}`);
     alert("user deleted successfully.");
   };
 
